@@ -27,14 +27,14 @@ class City(models.Model):
 
 class PopulationModule(models.Model):
     GENDER_CHOICES=(
-        ('M','Male'),
-        ('F','Female'),
-        ('O', 'Other')
+        ('Male','Male'),
+        ('Female','Female'),
+        ('Other', 'Other')
     )
     Group_CHOICES=(
-    ('old','Old'),
-    ('young','Young'),
-    ('child', 'Child')
+    ('Old','Old'),
+    ('Young','Young'),
+    ('Child', 'Child')
     )
     city=models.ForeignKey(City,on_delete=models.CASCADE,related_name='populations')
     gender=models.CharField(max_length=10,choices=GENDER_CHOICES)

@@ -1,0 +1,4 @@
+{% extends 'base.html' %} {% block title %} {% endblock %} {% block content %}
+<h1>Welcome to Dashboard</h1>
+{% for k in total_population %} Country: {{k.city__state__country__name}}<br />total_population:{{k.total_population}}<br />
+{% endfor %} {% endblock %}

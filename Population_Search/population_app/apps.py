@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class PopulationSearchConfig(AppConfig):
+class PopulationAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'population_search'
+    name = 'population_app'
